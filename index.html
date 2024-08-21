@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -9,12 +9,12 @@
 
   <body class="bg-black text-white">
     <header
-      class="section-container flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%] bg-black/70 backdrop-blur-sm z-10"
+      class="section-container fixed left-[50%] z-10 flex w-full -translate-x-[50%] items-center justify-between bg-black/70 backdrop-blur-sm"
     >
       <a href="#">
         <img class="w-24 md:w-32" src="./images/logo.png" alt="logo" />
       </a>
-      <nav class="hidden md:block space-x-6 font-bold lg:text-2xl lg:space-x-8">
+      <nav class="hidden space-x-6 font-bold md:block lg:space-x-8 lg:text-2xl">
         <a href="#hero">Home</a>
         <a href="#how-it-works">How It Works?</a>
         <a href="#about">About</a>
@@ -25,13 +25,13 @@
     </header>
     <section
       id="hero"
-      class="bg-[url('./images/background-1.png')] bg-no-repeat bg-right bg-cover md:bg-contain pt-36 section-container"
+      class="section-container bg-[url('./images/background-1.png')] bg-cover bg-right bg-no-repeat pt-36 md:bg-contain"
     >
       <div
-        class="flex flex-col md:flex-row md:items-center justify-between max-w-6xl mx-auto"
+        class="mx-auto flex max-w-6xl flex-col justify-between md:flex-row md:items-center"
       >
         <h1
-          class="text-6xl md:text-7xl font-bold leading-[64px] md:leading-[92px]"
+          class="text-6xl font-bold leading-[64px] md:text-7xl md:leading-[92px]"
         >
           THE<br />SHOE<br />COMPANY
         </h1>
@@ -44,50 +44,50 @@
         </div>
       </div>
     </section>
-    <section id="how-it-works" class="section-container pt-20 scroll-mt-7">
-      <h2 class="text-center text-3xl font-bold max-w-md mx-auto mb-12">
+    <section id="how-it-works" class="section-container scroll-mt-7 pt-20">
+      <h2 class="mx-auto mb-12 max-w-md text-center text-3xl font-bold">
         Have they finally made the perfect workout shoe?
       </h2>
-      <div class="max-w-xl mx-auto pt-60 xl:pt-12 relative">
+      <div class="relative mx-auto max-w-xl pt-60 xl:pt-12">
         <img
-          class="w-full max-w-2xl rotate-6 xl:rotate-0 p-8 media440:p-0"
+          class="w-full max-w-2xl rotate-6 p-8 media440:p-0 xl:rotate-0"
           src="./images/how-it-works.png"
           alt="shoe"
         />
         <div
-          class="max-w-[200px] xl:max-w-xs absolute top-0 xl:-translate-x-full"
+          class="absolute top-0 max-w-[200px] xl:max-w-xs xl:-translate-x-full"
         >
-          <h3 class="text-lg media560:text-2xl font-bold">THE HEEL</h3>
+          <h3 class="text-lg font-bold media560:text-2xl">THE HEEL</h3>
           <p class="text-xs media560:text-lg">
             The heel is well-built, has appropriate elevation and is not too
             rigid.
           </p>
           <img
-            class="translate-y-8 xl:ml-auto w-32 rotate-45 xl:rotate-0"
+            class="w-32 translate-y-8 rotate-45 xl:ml-auto xl:rotate-0"
             src="images/arrow-1.png"
             alt="arrow-1"
           />
         </div>
         <div
-          class="max-w-[200px] xl:max-w-xs absolute top-16 media560:top-0 right-0 xl:-right-60"
+          class="absolute right-0 top-16 max-w-[200px] media560:top-0 xl:-right-60 xl:max-w-xs"
         >
           <img
-            class="w-32 media560:w-auto xl:-ml-32 rotate-[120deg] xl:rotate-0 translate-y-full media560:translate-y-60 xl:translate-y-0"
+            class="w-32 translate-y-full rotate-[120deg] media560:w-auto media560:translate-y-60 xl:-ml-32 xl:translate-y-0 xl:rotate-0"
             src="images/arrow-2.png"
             alt="arrow-2"
           />
-          <h3 class="text-lg media560:text-2xl font-bold -mt-20">THE FRONT</h3>
+          <h3 class="-mt-20 text-lg font-bold media560:text-2xl">THE FRONT</h3>
           <p class="text-xs media560:text-lg">
             The front is comfortable and adjusts well to the shape of your foot.
           </p>
         </div>
-        <div class="max-w-[200px] xl:max-w-xs absolute -bottom-16">
+        <div class="absolute -bottom-16 max-w-[200px] xl:max-w-xs">
           <img
-            class="w-32 media560:w-auto ml-auto -mb-10 max-w-[150px]"
+            class="-mb-10 ml-auto w-32 max-w-[150px] media560:w-auto"
             src="images/arrow-3.png"
             alt="arrow-3"
           />
-          <h3 class="text-lg media560:text-2xl font-bold">TRACTION</h3>
+          <h3 class="text-lg font-bold media560:text-2xl">TRACTION</h3>
           <p class="text-xs media560:text-lg">
             The shoe has good traction and doesn't slip easily.
           </p>
@@ -96,16 +96,16 @@
     </section>
     <section
       id="about"
-      class="section-container mt-32 flex flex-col md:flex-row md:space-x-12 scroll-mt-32"
+      class="section-container mt-32 flex scroll-mt-32 flex-col md:flex-row md:space-x-12"
     >
-      <h2 class="text-3xl text-center font-bold md:hidden my-6">About Us!</h2>
+      <h2 class="my-6 text-center text-3xl font-bold md:hidden">About Us!</h2>
       <div
-        class="bg-[url('./images/about-us-background.png')] bg-no-repeat md:w-full self-center"
+        class="self-center bg-[url('./images/about-us-background.png')] bg-no-repeat md:w-full"
       >
         <img src="./images/about-shoe-company.png" alt="legs" />
       </div>
-      <div class="space-y-8 max-w-xl md:w-full">
-        <h2 class="text-6xl font-bold hidden md:block">About Us!</h2>
+      <div class="max-w-xl space-y-8 md:w-full">
+        <h2 class="hidden text-6xl font-bold md:block">About Us!</h2>
         <p class="font-medium">
           For each one of those shoe sweethearts out there, THE SHOE COMPANY
           offer the one-stop goal to pick the correct match of footwear.
@@ -129,17 +129,17 @@
     </section>
     <section
       id="testimonials"
-      class="section-container mt-8 pt-8 bg-bg-testimonials"
+      class="section-container mt-8 bg-bg-testimonials pt-8"
     >
-      <h2 class="text-3xl md:text-6xl font-bold text-center">
+      <h2 class="text-center text-3xl font-bold md:text-6xl">
         What People are saying about THE SHOE COMPANY ?
       </h2>
       <div
-        class="text-center flex flex-col md:flex-row items-center md:items-stretch gap-8 justify-between mt-16 max-w-5xl mx-auto"
+        class="mx-auto mt-16 flex max-w-5xl flex-col items-center justify-between gap-8 text-center md:flex-row md:items-stretch"
       >
         <div class="w-60">
           <img
-            class="w-full mb-4"
+            class="mb-4 w-full"
             src="./images/Testimonials-1.png"
             alt="Testimonial-1"
           />
@@ -150,7 +150,7 @@
         </div>
         <div class="w-60">
           <img
-            class="w-full mb-4"
+            class="mb-4 w-full"
             src="./images/Testimonials-2.png"
             alt="Testimonial-2"
           />
@@ -161,7 +161,7 @@
         </div>
         <div class="w-60">
           <img
-            class="w-full mb-4"
+            class="mb-4 w-full"
             src="./images/Testimonials-3.png"
             alt="Testimonial-3"
           />
@@ -174,11 +174,11 @@
     </section>
     <section
       id="contact"
-      class="section-container flex flex-col lg:flex-row items-center justify-between p-16"
+      class="section-container flex flex-col items-center justify-between p-16 lg:flex-row"
     >
-      <div class="mb-10 lg:mb-0 shrink-0 self-start md:self-center">
-        <h2 class="text-3xl md:text-6xl font-bold">Contact Us</h2>
-        <p class="max-w-[180px] my-8">
+      <div class="mb-10 shrink-0 self-start md:self-center lg:mb-0">
+        <h2 class="text-3xl font-bold md:text-6xl">Contact Us</h2>
+        <p class="my-8 max-w-[180px]">
           THE SHOE COMPANY, Dallas, Texas, USA +1 5590 1120 9910
         </p>
         <div class="flex space-x-4">
@@ -198,7 +198,7 @@
       </div>
       <div class="w-full">
         <iframe
-          class="w-full max-w-xl mx-auto lg:mx-0 lg:ml-auto"
+          class="mx-auto w-full max-w-xl lg:mx-0 lg:ml-auto"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214587.60090726364!2d-96.87198002011303!3d32.82058616531825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1679084925294!5m2!1sen!2sin"
           height="650"
           style="border: 0"
