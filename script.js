@@ -11,3 +11,6 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
     mobileMenu.classList.add("hidden");
   });
 });
+
+
+// npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
