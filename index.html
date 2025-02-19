@@ -9,19 +9,33 @@
 
   <body class="bg-black text-white">
     <header
-      class="section-container fixed left-[50%] z-10 flex w-full -translate-x-[50%] items-center justify-between bg-black/70 backdrop-blur-xs"
+      class="section-container backdrop-blur-xs fixed left-[50%] z-10 flex w-full -translate-x-[50%] items-center justify-between bg-black/70"
     >
       <a href="#">
         <img class="w-24 md:w-32" src="./images/logo.png" alt="logo" />
       </a>
-      <nav class="hidden space-x-6 font-bold md:block lg:space-x-8 lg:text-2xl">
+      <nav id="nav-menu" class="hidden space-x-6 font-bold md:block lg:space-x-8 lg:text-2xl">
         <a href="#hero">Home</a>
         <a href="#how-it-works">How It Works?</a>
         <a href="#about">About</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact Us</a>
       </nav>
-      <button class="text-5xl md:hidden">≡</button>
+
+      <!-- Hamburger Menu -->
+      <button id="hamburger" class="text-5xl md:hidden focus:outline-none">≡</button>
+
+      <!-- Mobile Navigation Menu (Initially Hidden) -->
+      <div
+        id="mobile-menu"
+        class="absolute right-0 top-16 hidden w-full flex-col items-center bg-black py-4 text-center md:hidden"
+      >
+        <a href="#hero" class="block py-2">Home</a>
+        <a href="#how-it-works" class="block py-2">How It Works?</a>
+        <a href="#about" class="block py-2">About</a>
+        <a href="#testimonials" class="block py-2">Testimonials</a>
+        <a href="#contact" class="block py-2">Contact Us</a>
+      </div>
     </header>
     <section
       id="hero"
@@ -50,15 +64,15 @@
       </h2>
       <div class="relative mx-auto max-w-xl pt-60 xl:pt-12">
         <img
-          class="w-full max-w-2xl rotate-6 p-8 media440:p-0 xl:rotate-0"
+          class="media440:p-0 w-full max-w-2xl rotate-6 p-8 xl:rotate-0"
           src="./images/how-it-works.png"
           alt="shoe"
         />
         <div
           class="absolute top-0 max-w-[200px] xl:max-w-xs xl:-translate-x-full"
         >
-          <h3 class="text-lg font-bold media560:text-2xl">THE HEEL</h3>
-          <p class="text-xs media560:text-lg">
+          <h3 class="media560:text-2xl text-lg font-bold">THE HEEL</h3>
+          <p class="media560:text-lg text-xs">
             The heel is well-built, has appropriate elevation and is not too
             rigid.
           </p>
@@ -69,26 +83,26 @@
           />
         </div>
         <div
-          class="absolute right-0 top-16 max-w-[200px] media560:top-0 xl:-right-60 xl:max-w-xs"
+          class="media560:top-0 absolute right-0 top-16 max-w-[200px] xl:-right-60 xl:max-w-xs"
         >
           <img
-            class="w-32 translate-y-full rotate-[120deg] media560:w-auto media560:translate-y-60 xl:-ml-32 xl:translate-y-0 xl:rotate-0"
+            class="media560:w-auto media560:translate-y-60 w-32 translate-y-full rotate-[120deg] xl:-ml-32 xl:translate-y-0 xl:rotate-0"
             src="images/arrow-2.png"
             alt="arrow-2"
           />
-          <h3 class="-mt-20 text-lg font-bold media560:text-2xl">THE FRONT</h3>
-          <p class="text-xs media560:text-lg">
+          <h3 class="media560:text-2xl -mt-20 text-lg font-bold">THE FRONT</h3>
+          <p class="media560:text-lg text-xs">
             The front is comfortable and adjusts well to the shape of your foot.
           </p>
         </div>
         <div class="absolute -bottom-16 max-w-[200px] xl:max-w-xs">
           <img
-            class="-mb-10 ml-auto w-32 max-w-[150px] media560:w-auto"
+            class="media560:w-auto -mb-10 ml-auto w-32 max-w-[150px]"
             src="images/arrow-3.png"
             alt="arrow-3"
           />
-          <h3 class="text-lg font-bold media560:text-2xl">TRACTION</h3>
-          <p class="text-xs media560:text-lg">
+          <h3 class="media560:text-2xl text-lg font-bold">TRACTION</h3>
+          <p class="media560:text-lg text-xs">
             The shoe has good traction and doesn't slip easily.
           </p>
         </div>
@@ -129,7 +143,7 @@
     </section>
     <section
       id="testimonials"
-      class="section-container mt-8 bg-bg-testimonials pt-8"
+      class="section-container bg-bg-testimonials mt-8 pt-8"
     >
       <h2 class="text-center text-3xl font-bold md:text-6xl">
         What People are saying about THE SHOE COMPANY ?
@@ -216,5 +230,6 @@
         <p>Made with ❤️ By Satyam Kumar Jha</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
